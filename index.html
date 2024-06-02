@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤩 Feliz Dia a la Niña mas Bonita 🤩</title>
+    <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .body {
+            background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
+            background-size: 800% 800%;
+            animation: gradient 15s ease infinite;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body__title {
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
+
+        .body__title::before,
+        .body__title::after {
+            content: '❤️';
+            color: white;
+            margin: 0 10px;
+        }
+
+        .body__name {
+            color: aliceblue;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .body__img {
+            width: 30%; /* Ajuste del tamaño de la imagen */
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .footer-images {
+            margin-bottom: 20px;
+        }
+
+        .footer-images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">Feliz Dia a la niña mas Bonita</h1>
+    <div class="body__name">Jessennia Stefannie Naranjo Nazareno</div>
+    <img src="https://tvazteca.brightspotcdn.com/dims4/default/f8050a5/2147483647/strip/true/crop/1200x630+0+0/resize/620x326!/format/jpg/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F7a%2F99%2Fab9adea04197af25a465eef3e581%2Ftiktok-shrek-gatito-2.jpg" alt="miau miau" class="body__img"/>
+
+    <div class="footer-images">
+        <img src="imagen-1.jpeg" alt="Imagen 1">
+        <img src="imagen-2.jpeg" alt="Imagen 2">
+        <img src="imagen-3.jpeg" alt="Imagen 3">
+        <img src="imagen-4.jpeg" alt="Imagen 4">
+    </div>
+
+    <div class="buttons">
+        <button id="yes">😍Me gusto👌</button>
+        <button id="no">😒Nel Pastel😭</button>
+    </div>
+
+    <script>
+        const vutonSi = document.getElementById("yes");
+        const vutonNo = document.getElementById("no");
+
+        const preciosa = () => {
+            alert("sorpresa");
+            alert("te estas poniendo viejita");
+            location.href = "https://www.youtube.com/watch?v=VYtJAuoZxcc";
+        };
+
+        const ebitarkcrompa = () => {
+            vutonNo.style.position = "absolute";
+            vutonNo.style.top = (Math.random() * window.innerHeight) + "px";
+            vutonNo.style.left = (Math.random() * window.innerWidth) + "px";
+        };
+
+        vutonSi.addEventListener("click", preciosa);
+        vutonNo.addEventListener("mouseover", ebitarkcrompa);
+    </script>
+</body>
+</html>
